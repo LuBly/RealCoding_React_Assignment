@@ -4,7 +4,7 @@ import { Switch, Route, withRouter } from "react-router";
 import CityList from "./CityList";
 import Weather from "./Weather/index";
 
-const API_CITIES = "http://localhost:8888//weather-service/weathers/cities";
+const API_CITIES = "http://localhost:8888//weather-service/available-cities";
 
 class Cities extends React.Component {
   state = {
@@ -14,7 +14,7 @@ class Cities extends React.Component {
   componentDidMount() {
     console.log("City component");
 
-    // console.log(this.state.cities);
+    //console.log(this.state.cities);
 
     const { cities } = this.state;
     // console.log("Cities: ", cities);
